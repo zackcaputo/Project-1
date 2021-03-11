@@ -1,1 +1,1 @@
-# upenncybersecuritybootcamp
+# upenn cybersecurity bootcamp
