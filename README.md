@@ -93,7 +93,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the playbook.yml file to the ansible container in jumpbox.
 - Update the ansible.cfg file to include the Three Webserver IP Addresses 10.0.0.14, 10.0.0.15,10.0.0.4
-- Run the playbook, and navigate to http://52.254.67.239:5601/app/kibana or THE IP Address the webservers are severing the application on ?  to check that the installation worked as expected.
+- Run the playbook, and navigate to http://52.254.67.239:5601/app/kibana or THE IP Address the webservers are serving the application on ?  to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it? Filebeat is copied in into the ansible container
