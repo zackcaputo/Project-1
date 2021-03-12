@@ -4,11 +4,11 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![C:\Users\zacha\Downloads\1-Lesson-Plans_13-Elk-Stack-Project_Activities_Project_Submission_README.zip\README\Images](Elk Stack Network Diagram.png)
+![Project-1/Images/ELK Stack Network Diagram.PNG](Elk Stack Network Diagram.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  filebeat-playbook.yml
 
 This document contains the following details:
 - Description of the Topologu
@@ -73,7 +73,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![C:\Users\zacha\Downloads\1-Lesson-Plans_13-Elk-Stack-Project_Activities_Project_Submission_README.zip\README\Images](Elk Stack Container Screenshot.png)
+![Project-1/Images/Elk Stack Container Screenshot.PNG](Elk Stack Container Screenshot.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -85,7 +85,7 @@ We have installed the following Beats on these machines:
  Filebeat
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
-Filebeat collects log data
+Filebeat collects log data like getting inputs from /var/log/apache2/ apache a webserver application. 
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -93,7 +93,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the playbook.yml file to the ansible container in jumpbox.
 - Update the ansible.cfg file to include the Three Webserver IP Addresses 10.0.0.14, 10.0.0.15,10.0.0.4
-- Run the playbook, and navigate to http://52.254.67.239:5601/app/kibana to check that the installation worked as expected.
+- Run the playbook, and navigate to http://52.254.67.239:5601/app/kibana  to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it? Filebeat is copied in into the ansible container
